@@ -1,0 +1,84 @@
+{
+  "sections": {
+    "main": {
+      "type": "hero",
+      "blocks": {
+        "slide_wdx464": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/istockphoto-956151356-1024x1024.jpg",
+            "image_position": "center center",
+            "overlay": true,
+            "title": "Solve ulcers",
+            "text": "<p> At Healthylum, we understand the agony and discomfort that digestive issues can bring into your life. That's why we've made it our mission to provide you with premium solutions to tackle one of the most common gastrointestinal problems: ulcers.<\/p>",
+            "text_alignment": "text-center",
+            "button_label": "Guard your stomach",
+            "button_link": "shopify:\/\/products\/gastro-guard",
+            "button_style": "btn--primary"
+          }
+        }
+      },
+      "block_order": [
+        "slide_wdx464"
+      ],
+      "settings": {
+        "section_height": "xlarge",
+        "section_height_mobile": "xlarge",
+        "autoplay": false,
+        "dots": true,
+        "arrows": true,
+        "autoplayspeed": 5
+      }
+    },
+    "featured_row_hJWrwy": {
+      "type": "featured-row",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/patient-receives-some-good-news.jpg",
+        "section_style": "",
+        "text_size": "medium",
+        "image_alignement": "left",
+        "text_alignment": "text-center",
+        "title": "Our  story",
+        "text": "<p> Founded by a team of passionate health enthusiasts who have experienced the debilitating effects of ulcers firsthand, [Shop Name] was born out of a desire to empower individuals to take control of their digestive health. Our journey began with a simple yet profound realization: traditional approaches to ulcer treatment often fall short of providing lasting relief. We embarked on a relentless quest to discover natural, science-backed remedies that not only alleviate symptoms but also promote long-term healing.<\/p>",
+        "button_style": "btn--primary",
+        "button_label": "",
+        "button_link": ""
+      }
+    },
+    "featured_product_AExfrJ": {
+      "type": "featured-product",
+      "settings": {
+        "featured_product": "gastro-guard",
+        "image_layout": "stacked",
+        "product_photo_alignement": "right",
+        "enable_zoom": true,
+        "product_vendor": false,
+        "product_title_size": false,
+        "product_header_alignement": "",
+        "product_selector": "radio",
+        "quantity_enabled": false,
+        "button_cart_icon": true,
+        "enable_payment_button": false,
+        "show_description": false,
+        "social_sharing_products": false,
+        "show_product_tags": false,
+        "dbtfy_product_tabs_first": true
+      }
+    },
+    "newsletter_3bRf8W": {
+      "type": "newsletter",
+      "settings": {
+        "title": "Subscribe to our newsletter",
+        "subtitle": "Let's share with you proven tips on how to keep your stomach safe.",
+        "section_style": "",
+        "send_icon": "fa-envelope"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "featured_row_hJWrwy",
+    "featured_product_AExfrJ",
+    "newsletter_3bRf8W"
+  ]
+}
