@@ -1,3 +1,4 @@
+
 <!-- /snippets/product-template.liquid -->
 <meta itemprop="url" content="{{ shop.url }}{{ product.url }}">
 <meta itemprop="image" content="{{ product.featured_image.src | img_url: 'grande' }}">
@@ -188,6 +189,8 @@
               </div>
 
               <div itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                {% unless  product.metafields.custom.affiliatelink %}
+                  
                 
                 <div class="price-wrapper {{ section.settings.product_header_alignement }}" data-price-container>
                   {% if section_onboarding %}
@@ -225,9 +228,14 @@
                   {% endif %}
                   {% if settings.position_currency_converter == "product" %}{% include "currency-selector" %}{% endif %}
                 </div>
+              {% endunless %}
                 
                     {% include "dbtfy-inventory-quantity" %}{% include "dbtfy-live-view" %}{% include "dbtfy-delivery-time" %}<meta itemprop="priceCurrency" content="{{ shop.currency }}">
            		<link itemprop="availability" href="http://schema.org/{% if product.available %}InStock{% else %}OutOfStock{% endif %}">
+              
+            {% unless product.metafields.custom.affiliatelink  %}
+              
+            
 
                 {% if section_onboarding %}
                   <div class="product-single__add-to-cart default-product product-single__add-to-cart--full-width">
@@ -341,6 +349,17 @@
                     </div>
                   {% endform %}  
                 {% endif %}
+                {%endunless %}
+
+                  {%if product.metafields.custom.affiliatelink %}
+                  <div class="product-single__add-to-cart default-product product-single__add-to-cart--full-width">
+                    <a name="add" href="{{ product.metafields.custom.affiliatelink }}" target="-blank" id="AddToCart" class="btn btn--buy " style="width:100%">
+                      See on Ebay
+                    </a>
+                  </div>
+
+                {%endif %}
+
               </div>
 
                 {% include "dbtfy-sales-countdown" %}{% include "dbtfy-trust-badge", position: "product" %}{% unless product.description == blank or section.settings.show_description == false %}
